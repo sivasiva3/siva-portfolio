@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Siva's Portfolio</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="index.css">
+	<style>
+		.projectdetail{
+			color: black;
+		}
+    ul li:hover {
+      color: black;
+    }
+    footer{
+      margin-top: 5px;
+    }
+	</style>
+	<script>
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+	</script>
+</head>
+<body>
+	<!-- Header Section -->
+	<header>
+		<div id="heading">
+				<h1 class="logo" id="portfolio">Siva's Portfolio</h1>
+		</div>
+	</header>
+	<div class="container">		
+			<nav id="navigation">
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="skills.html">Skills</a></li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	
+
+	<!-- Hero Section -->
+	<section class="hero">
+	  <div class="container hero-content">
+	    <div class="projects">
+	      <div class="projectbox" id="p1">
+	        <h3>Login System</h3>
+	        <a href="#project1"><img class="projectimage" src="p1.png" alt="Login System"></a>
+	      </div>
+	      <div class="projectbox" id="p2">
+	        <h3>CRUD Angular</h3>
+	        <a href="#project2"><img class="projectimage" src="p2.png" alt="CRUD"></a>
+	      </div>
+	      <div class="projectbox" id="p3">
+	        <h3>CRUD Java</h3>
+	        <a href="#project3"><img class="projectimage" src="p3.png" alt="CRUD"></a>
+	      </div>
+	      <div class="projectbox" id="p4">
+	        <h3>Gov Website</h3>
+	        <a href="#project4"><img class="projectimage" src="p4.png" alt="Gov"></a>
+	      </div>
+	      <div class="projectbox" id="p5">
+	        <h3>Portfolio</h3>
+	        <a href="#project5"><img class="projectimage" src="p5.png" alt="Portfolio"></a>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+	<!-- Project 1: User Management System -->
+<div id="project1">
+  <section id="p1-details" class="projectdetail">
+    <a href="#heading"><button class="top">Back to top</button></a>
+    <h2>User Management System</h2>
+    <p><strong>Tech Stack:</strong> JSP, Servlets, Java, HTML, CSS, JavaScript, MySQL</p>
+
+    <div class="projectcontent">
+      <div class="projectleft">
+        <h3>🔍 Overview</h3>
+        <p>Full-stack app for user registration, email/phone login, profile editing, and soft-delete deactivation.</p>
+
+        <h3>✔️ Core Features</h3>
+        <ul>
+          <li>Register with full info and hashed passwords</li>
+          <li>Login via email or phone</li>
+          <li>Dashboard with profile/deactivate/logout</li>
+          <li>Profile update feature</li>
+          <li>Soft-delete with is_active flag</li>
+        </ul>
+
+        <h3>🏗️ Architecture & Workflow</h3>
+        <ul>
+          <li>Servlet + JSP MVC</li>
+          <li>MySQL + JDBC</li>
+          <li>Client/server-side validation</li>
+          <li>Session handling</li>
+        </ul>
+      </div>
+
+      <div class="projectright">
+        <div class="image-slider">
+		    <div class="slider-wrapper">
+		      <img src="p1img1.png" class="slide projectsample active" alt="Project Screenshot" />
+		      <img src="p1img2.png" class="slide projectsample" alt="Project Screenshot" />
+		      <img src="p1img3.png" class="slide projectsample" alt="Project Screenshot" />
+		    </div>
+		    <button class="nav-btn prev">&#10094;</button>
+		    <button class="nav-btn next">&#10095;</button>
+		  </div>
+        <h3>🔁 User Flow</h3>
+        <ol>
+          <li>Register → store user</li>
+          <li>Login → session → dashboard</li>
+          <li>Profile → view/edit</li>
+          <li>Deactivate → logout</li>
+          <li>Logout → session end</li>
+        </ol>
+
+        <h3>🔧 Next Enhancements</h3>
+        <ul>
+          <li>Password reset via email</li>
+          <li>Email verification</li>
+          <li>Role-based access</li>
+          <li>Bootstrap UI</li>
+          <li>Security improvements</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Project 2: Angular CRUD Dashboard -->
+<div id="project2">
+  <section id="p2-details" class="projectdetail">
+    <a href="#heading"><button class="top">Back to top</button></a>
+    <h2>Angular CRUD Dashboard</h2>
+    <p><strong>Tech Stack:</strong> Angular, TypeScript, HTML, CSS, JSON Server</p>
+
+    <div class="projectcontent">
+      <div class="projectleft">
+        <h3>🔍 Overview</h3>
+        <p>SPA demonstrating full CRUD operations using Angular + JSON Server.</p>
+
+        <h3>✔️ Core Features</h3>
+        <ul>
+          <li>List with server-side pagination</li>
+          <li>Reactive form-based add</li>
+          <li>Edit via modal or inline</li>
+          <li>Delete with confirmation</li>
+        </ul>
+
+        <h3>🏗️ Architecture</h3>
+        <ul>
+          <li>Modular Angular setup</li>
+          <li>HttpClient for API calls</li>
+          <li>Reactive forms & directives</li>
+        </ul>
+      </div>
+
+      <div class="projectright">
+         <div class="image-slider">
+        <div class="slider-wrapper">
+          <img src="p2img1.png" class="slide projectsample active" alt="Project Screenshot" />
+          <img src="p2img2.png" class="slide projectsample" alt="Project Screenshot" />
+        </div>
+        <button class="nav-btn prev">&#10094;</button>
+        <button class="nav-btn next">&#10095;</button>
+      </div>
+        <h3>🔁 User Flow</h3>
+        <ol>
+          <li>View list</li>
+          <li>Add new record</li>
+          <li>Edit or update</li>
+          <li>Delete with alert</li>
+        </ol>
+
+        <h3>🔧 Next Enhancements</h3>
+        <ul>
+          <li>Search/filter UI</li>
+          <li>Angular Material integration</li>
+          <li>Pagination + sorting</li>
+          <li>Auth & roles</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Project 3: JSP-Servlet CRUD Manager -->
+<div id="project3">
+  <section id="p3-details" class="projectdetail">
+    <a href="#heading"><button class="top">Back to top</button></a>
+    <h2>JSP‑Servlet User CRUD Manager</h2>
+    <p><strong>Tech Stack:</strong> Java, JSP, Servlets, JDBC, MySQL</p>
+
+    <div class="projectcontent">
+      <div class="projectleft">
+        <h3>🔍 Overview</h3>
+        <p>Classic JSP-Servlet web app for full user CRUD operations.</p>
+
+        <h3>✔️ Core Features</h3>
+        <ul>
+          <li>List users with pagination</li>
+          <li>Add via form</li>
+          <li>Edit with pre-filled form</li>
+          <li>Delete with confirmation</li>
+        </ul>
+
+        <h3>🏗️ Architecture</h3>
+        <ul>
+          <li>MVC (Servlet, JSP, DAO)</li>
+          <li>MySQL via JDBC</li>
+          <li>JSTL & EL for UI logic</li>
+        </ul>
+      </div>
+
+      <div class="projectright">
+        <div class="image-slider">
+        <div class="slider-wrapper">
+          <img src="p3img1.png" class="slide projectsample active" alt="Project Screenshot" />
+          <img src="p3img1.png" class="slide projectsample" alt="Project Screenshot" />
+        </div>
+        <button class="nav-btn prev">&#10094;</button>
+        <button class="nav-btn next">&#10095;</button>
+      </div>
+        <h3>🔁 User Flow</h3>
+        <ol>
+          <li>Open list page</li>
+          <li>Add new user</li>
+          <li>Edit user</li>
+          <li>Delete with prompt</li>
+        </ol>
+
+        <h3>🔧 Next Enhancements</h3>
+        <ul>
+          <li>Search + filters</li>
+          <li>Bootstrap layout</li>
+          <li>JSTL improvements</li>
+          <li>Validation + errors</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Project 4: Government Website -->
+<div id="project4">
+  <section id="p4-details" class="projectdetail">
+    <a href="#heading"><button class="top">Back to top</button></a>
+    <h2>Government Website Design</h2>
+    <p><strong>Tech Stack:</strong> HTML5, CSS3, Semantic Tags</p>
+
+    <div class="projectcontent">
+      <div class="projectleft">
+        <h3>🔍 Overview</h3>
+        <p>Accessible and responsive government-style template using semantic HTML + modern CSS.</p>
+
+        <h3>✔️ Key Features</h3>
+        <ul>
+          <li>Accessibility-first (WCAG)</li>
+          <li>Navigation + breadcrumb trails</li>
+          <li>Responsive layout for all devices</li>
+        </ul>
+
+        <h3>🏗️ Best Practices</h3>
+        <ul>
+          <li>Mobile-first layout</li>
+          <li>Semantic structure</li>
+          <li>Readable fonts + contrast</li>
+        </ul>
+      </div>
+
+      <div class="projectright">
+        <div class="image-slider">
+        <div class="slider-wrapper">
+          <img src="p4img1.png" class="slide projectsample active" alt="Project Screenshot" />
+          <img src="p4img2.png" class="slide projectsample" alt="Project Screenshot" />
+        </div>
+        <button class="nav-btn prev">&#10094;</button>
+        <button class="nav-btn next">&#10095;</button>
+      </div>
+        <h3>🔁 User Flow</h3>
+        <ol>
+          <li>Land on home with services</li>
+          <li>3-click navigation structure</li>
+          <li>Auto-responsive content</li>
+          <li>Footer always visible</li>
+        </ol>
+
+        <h3>🔧 Future Enhancements</h3>
+        <ul>
+          <li>Multi-language support</li>
+          <li>Dark/light theme toggle</li>
+          <li>Lazy-loading & accessibility AAA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Project 5: My portfolio -->
+<div id="project5">
+<section class="projectdetail" id="portfolio">
+  <button class="top"><a href="#top" style="color:white;">Back to Top</a></button>
+  <h2>Personal Portfolio Website</h2>
+  <p>This project showcases my personal portfolio built with HTML, CSS, JavaScript and includes responsive design, animated backgrounds, and detailed project sections.</p>
+
+  <div class="projectcontent">
+    <div class="projectleft">
+      <h3>Features</h3>
+      <ul>
+        <li>Responsive layout across devices</li>
+        <li>Animated gradient or particle background</li>
+        <li>Project showcase with images and details</li>
+        <li>Contact form integrated with EmailJS</li>
+        <li>Downloadable Resume</li>
+        <li>Smooth scrolling navigation</li>
+      </ul>
+      <h3>Technologies Used</h3>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>EmailJS for contact form</li>
+        <li>Typed.js or Anime.js for text effects</li>
+        <li>Responsive media queries</li>
+      </ul>
+    </div>
+
+    <div class="projectright">
+    	<div class="image-slider">
+        <div class="slider-wrapper">
+          <img src="p5img1.png" class="slide projectsample active" alt="Project Screenshot" />
+          <img src="p5img2.png" class="slide projectsample" alt="Project Screenshot" />
+          <img src="p5img3.png" class="slide projectsample" alt="Project Screenshot" />
+        </div>
+        <button class="nav-btn prev">&#10094;</button>
+        <button class="nav-btn next">&#10095;</button>
+      </div>
+      <h3>What I Learned</h3>
+      <ol>
+        <li>Designing responsive UIs from scratch</li>
+        <li>Using modern CSS animations</li>
+        <li>Integrating frontend with external services</li>
+      </ol>
+    </div>
+  </div>
+</section>
+</div>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2025 Siva's Portfolio. All Rights Reserved.</p>
+	</footer>
+	<script src="project.js"></script>
+</body>
+</html>
