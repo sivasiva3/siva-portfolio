@@ -105,13 +105,14 @@
     			<h3 id="contactme">Contact Me</h3>
     			<form class="contact-form" action="https://formsubmit.co/c0b3cb9704a0bf4c62a384a6a7402df3" method="POST">
 			        <label for="yourname">Name</label>
-			        <input type="text" id="yourname" placeholder="Enter your name" required>
+			        <input type="text" id="yourname" name="name" placeholder="Enter your name" required>
 			        <br>	
 			        <label for="email">Email</label>
-			        <input type="email" id="email" placeholder="Enter your email" required>
+			        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 					<br>
 			        <label for="message">Message</label>
-			        <textarea id="message" placeholder="Write your message here..." required></textarea>
+			        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+			        <input type="hidden" name="_captcha" value="false">
 			        <br>
 			        <button type="submit" class="submit-btn">Send Message</button>
 			    </form>
@@ -124,6 +125,6 @@
 	<footer>
 		<p>&copy; 2025 Siva's Portfolio. All Rights Reserved.</p>
 	</footer>
-
+	<script src="form.js"></script>
 </body>
 </html>
