@@ -16,6 +16,9 @@
     footer{
       margin-top: 5px;
     }
+    .hero{
+      margin-left: -20px;
+    }
 	</style>
 	<script>
     function scrollToSection(id) {
@@ -73,7 +76,7 @@
 	  </div>
 	</section>
 	<!-- Project 1: User Management System -->
-<div id="project1">
+  <div id="project1">
   <section id="p1-details" class="projectdetail">
     <a href="#heading"><button class="top">Back to top</button></a>
     <h2>User Management System</h2>
@@ -93,7 +96,7 @@
           <li>Soft-delete with is_active flag</li>
         </ul>
 
-        <h3>🏗️ Architecture & Workflow</h3>
+        <h3>🏗️ Architecture</h3>
         <ul>
           <li>Servlet + JSP MVC</li>
           <li>MySQL + JDBC</li>
@@ -101,20 +104,21 @@
           <li>Session handling</li>
         </ul>
         <h3>Github Link :</h3>
-        <p><a href="https://github.com/sivasiva3/googlelogin.git" style="color:blue;" target="_blank">
-          https://github.com/sivasiva3/googlelogin.git
+        <p class="gitlink"><a href="https://github.com/sivasiva3/googlelogin.git" style="color:blue;" target="_blank">
+          https://github.com/sivasiva3/googlelogin
         </a></p>
       </div>
+
       <div class="projectright">
-        <div class="image-slider">
-		    <div class="slider-wrapper">
-		      <img src="p1img1.png" class="slide projectsample active" alt="Project Screenshot" />
-		      <img src="p1img2.png" class="slide projectsample" alt="Project Screenshot" />
-		      <img src="p1img3.png" class="slide projectsample" alt="Project Screenshot" />
-		    </div>
-		    <button class="nav-btn prev">&#10094;</button>
-		    <button class="nav-btn next">&#10095;</button>
-		  </div>
+         <div class="image-slider">
+        <div class="slider-wrapper">
+          <img src="p1img1.png" class="slide projectsample active" alt="Project Screenshot" />
+          <img src="p1img2.png" class="slide projectsample" alt="Project Screenshot" />
+          <img src="p1img3.png" class="slide projectsample" alt="Project Screenshot" />
+        </div>
+        <button class="nav-btn prev">&#10094;</button>
+        <button class="nav-btn next">&#10095;</button>
+      </div>
         <h3>🔁 User Flow</h3>
         <ol>
           <li>Register → store user</li>
@@ -373,6 +377,27 @@
 	<footer>
 		<p>&copy; 2025 Siva's Portfolio. All Rights Reserved.</p>
 	</footer>
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Back to Top">
+  <img src="arrow.png" alt="Scroll to Top" />
+  </button>
+
 	<script src="project.js"></script>
+  <script>
+  // Show button when user scrolls down
+  window.addEventListener("scroll", function () {
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  // Smooth scroll to top
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
 </body>
 </html>
