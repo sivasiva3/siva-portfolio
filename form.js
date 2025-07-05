@@ -1,4 +1,4 @@
-const form = document.getElementById("contactme");
+const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent redirect
